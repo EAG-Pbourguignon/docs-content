@@ -63,7 +63,7 @@ from openai import OpenAI
 
 # Initialize the client with your base URL and API key
 client = OpenAI(
-    base_url="https://api.scaleway.ai/v1",  # Scaleway's Generative APIs service URL
+    base_url="https://api.scaleway.ai/<SCW_PROJECT_ID>/v1",  # Scaleway's Generative APIs service URL
     api_key="<SCW_SECRET_KEY>"  # Your unique API secret key from Scaleway
 )
 ```
@@ -176,7 +176,7 @@ Following is an example using the Chat Completions API, but the `stream` paramet
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api.scaleway.ai/v1",  # Scaleway's Generative APIs service URL
+    base_url="https://api.scaleway.ai/<SCW_PROJECT_ID>/v1",  # Scaleway's Generative APIs service URL
     api_key="<SCW_API_KEY>"  # Your unique API key from Scaleway
 )
 response = client.chat.completions.create(
@@ -207,7 +207,7 @@ The service also supports asynchronous mode for any chat completion.
   from openai import AsyncOpenAI
 
   client = AsyncOpenAI(
-      base_url="https://api.scaleway.ai/v1",  # Scaleway's Generative APIs service URL
+      base_url="https://api.scaleway.ai/<SCW_PROJECT_ID>/v1",  # Scaleway's Generative APIs service URL
       api_key="<SCW_API_KEY>"  # Your unique API key from Scaleway
   )
 
@@ -233,7 +233,7 @@ The service also supports asynchronous mode for any chat completion.
   from openai import AsyncOpenAI
 
   client = AsyncOpenAI(
-      base_url="https://api.scaleway.ai/v1",  # Scaleway's Generative APIs service URL
+      base_url="https://api.scaleway.ai/<SCW_PROJECT_ID>/v1",  # Scaleway's Generative APIs service URL
       api_key="<SCW_API_KEY>"  # Your unique API key from Scaleway
   )
 
