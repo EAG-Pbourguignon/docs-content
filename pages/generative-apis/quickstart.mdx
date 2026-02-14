@@ -78,12 +78,13 @@ pip install openai
     from openai import OpenAI
 
     client = OpenAI(
-        base_url="https://api.scaleway.ai/v1", # # Scaleway's Generative APIs service URL
+        base_url="https://api.scaleway.ai/<SCw_PROJECT_ID>/v1", # Scaleway's Generative APIs service URL
         api_key="<SCW_SECRET_KEY>" # Your unique API secret key from Scaleway
     )
     ```
 
-    Make sure that you replace `<SCW_SECRET_KEY>` with the API key obtained from your Scaleway account.
+    Make sure that you replace `<SCW_PROJECT_ID>` with the identifier of the Scaleway Project and `<SCW_SECRET_KEY>` with the API key obtained from your
+    Scaleway account.
 
     <Message type="tip">
       We recommend storing your API keys securely using environment variables or [secret management tools](/secret-manager/) to prevent unauthorized access.
@@ -121,7 +122,7 @@ Below is an example for generating a description of a futuristic city.
     from openai import OpenAI
 
     client = OpenAI(
-        base_url="https://api.scaleway.ai/v1", # # Scaleway's Generative APIs service URL
+        base_url="https://api.scaleway.ai/<SCW_PROJECT_ID>/v1", # # Scaleway's Generative APIs service URL
         api_key="<SCW_SECRET_KEY>" # Your unique API secret key from Scaleway
     )
 
